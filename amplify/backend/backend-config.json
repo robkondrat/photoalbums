@@ -1,4 +1,56 @@
 {
+<<<<<<< HEAD
+  "auth": {
+    "photoalbums56fbc23e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "api": {
+    "photoalbums": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authphotoalbums56fbc23e"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  },
+  "function": {
+    "S3Trigger7aa7e933": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": []
+    }
+  },
+  "storage": {
+    "photoalbumsstorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger7aa7e933",
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ]
+        }
+      ]
+    }
+  }
+=======
 	"auth": {
 		"photoalbums5e595eb8": {
 			"service": "Cognito",
@@ -7,4 +59,5 @@
 			"customAuth": false
 		}
 	}
+>>>>>>> 2c7cd523c9155f4f01dc2e27e10176aa0aaf6da6
 }

@@ -34,5 +34,11 @@ node_modules/
 aws-exports.js
 awsconfiguration.json
 amplifyconfiguration.json
+<<<<<<< HEAD
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+=======
 amplify-gradle-config.json
 amplifyxc.config
+>>>>>>> 2c7cd523c9155f4f01dc2e27e10176aa0aaf6da6
