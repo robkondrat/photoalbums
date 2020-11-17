@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "auth": {
     "photoalbums56fbc23e": {
       "service": "Cognito",
@@ -49,4 +50,14 @@
       ]
     }
   }
+=======
+	"auth": {
+		"photoalbums5e595eb8": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+>>>>>>> 2c7cd523c9155f4f01dc2e27e10176aa0aaf6da6
 }

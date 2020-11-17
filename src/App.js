@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState, useEffect} from 'react';
 
 import Amplify, {Auth} from 'aws-amplify'
@@ -296,3 +297,18 @@ export default withAuthenticator(App, {
   }
 })
 
+=======
+import React from 'react';
+
+import { Header } from 'semantic-ui-react';
+
+function App() {
+  return (
+    <Header as="h1">
+      Hello World!
+    </Header>
+  )
+}
+
+export default App
+>>>>>>> 2c7cd523c9155f4f01dc2e27e10176aa0aaf6da6
