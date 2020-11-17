@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "photoalbums56fbc23e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
