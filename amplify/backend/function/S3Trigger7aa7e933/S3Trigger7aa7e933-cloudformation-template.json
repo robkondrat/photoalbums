@@ -47,6 +47,9 @@
           "Variables": {
             "ENV": {
               "Ref": "env"
+            },
+            "REGION": {
+              "Ref": "AWS::Region"
             }
           }
         },
@@ -61,7 +64,8 @@
         "Code": {
           "S3Bucket": "amplify-photoalbums-master-200339-deployment",
           "S3Key": "amplify-builds/S3Trigger7aa7e933-612b53597a456d337842-build.zip"
-        }
+        },
+        "Layers": []
       }
     },
     "LambdaExecutionRole": {
